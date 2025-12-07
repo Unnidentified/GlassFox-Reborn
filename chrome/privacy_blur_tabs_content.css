@@ -1,0 +1,30 @@
+/* Pure blur effect for inactive tabs */
+#tabbrowser-tabs .tabbrowser-tab .tab-stack .tab-content {
+    /* Pure blur without color or opacity manipulation */
+    filter: blur(1.98px);
+    
+    /* Subtle depth effect */
+    transform: perspective(500px) translateZ(-20px) scale(0.98);
+    
+    /* Smooth transition */
+    transition: 
+        filter 200ms linear,
+        transform 200ms ease-out;
+}
+
+/* Explicitly unblur current and hovered tabs */
+#tabbrowser-tabs .tabbrowser-tab.tab-current .tab-stack .tab-content,
+#tabbrowser-tabs .tabbrowser-tab[selected="true"] .tab-stack .tab-content,
+#tabbrowser-tabs .tabbrowser-tab:hover .tab-stack .tab-content {
+    /* Remove blur completely */
+    filter: blur(0px);
+    
+    /* Bring tab forward */
+    transform: perspective(500px) translateZ(0) scale(1);
+}
+
+/* Additional selector for extreme specificity */
+#tabbrowser-tabs .tabbrowser-tab.tab-current,
+#tabbrowser-tabs .tabbrowser-tab[selected="true"] {
+    filter: blur(0px) !important;
+}

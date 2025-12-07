@@ -1,0 +1,308 @@
+@import url("privacy_blur_tabs_content.css");
+
+/* Utility Variables */
+:root {
+  --color-overlap: rgba(0, 0, 0, .25);
+  --color-overlap-dark: rgba(0, 0, 0, .5);
+  
+  
+  --browser-margins: 10px;
+  &[inFullscreen] {
+    --browser-margins: 6px !important;
+    ;
+  }
+}
+ 
+/* Basic Transparency */
+:root {
+  @media not (prefers-reduced-transparency) {
+    @supports not -moz-bool-pref( "glassfox.transparency.disabled") {
+      appearance: -moz-sidebar !important;
+    }
+  }
+}
+
+/* Modular Styling */
+:root:not([windowtype="Toolkit:PictureInPicture"],
+[inDOMFullscreen]) {
+  body,
+  #browser,
+  #sidebar-main,
+  #navigator-toolbox {
+    & > *:not(#sidebar-launcher-splitter) {
+      box-shadow: 1px 1px 4px 1px var(--color-overlap-dark) !important;
+      border-radius: 10px !important;
+      overflow: hidden;
+    }
+  }
+  #browser {
+    gap: 10px;
+    margin: var(--browser-margins);
+    margin-top: 0px;
+    padding: 6px;
+    background: var(--color-overlap) !important;
+    border: 0px solid transparent;
+    #sidebar-main, #tabbrowser-tabbox {
+      border: 5px solid var(--color-overlap);
+      outline: none !important;
+      #tabbrowser-tabpanels {
+        background: transparent !important;
+      }
+      #vertical-tabs {
+        padding-top: 4px
+      }
+    }
+  }
+  #navigator-toolbox {
+    mix-blend-mode: screen;
+    margin: var(--browser-margins);
+    background: var(--color-overlap) !important;
+    padding: 6px;
+    > * {
+      background: inherit !important;
+      &#PersonalToolbar {
+        margin-top: 6px;
+      }
+    }
+  }
+}
+
+/* Larger Sidebar Splitter for easier adjusting */
+#sidebar-launcher-splitter {
+  width: 8px !important;
+  background: transparent !important;
+  margin: 2px -7px !important;
+  padding: 0px !important;
+  border-radius: 10px;
+  transition: all .6s ease-in-out !important;
+  box-shadow: 0 0 0 0 transparent;
+  &:hover {
+    background: var(--color-overlap) !important;
+    box-shadow: 1px 1px 4px 1px var(--color-overlap-dark) !important;
+  }
+}
+
+/* Hide Scrollbars in the sidebar */
+#vertical-pinned-tabs-container,
+scrollbox  {
+    scrollbar-width: none !important;
+}
+
+/* Taller Pinned Tabs Container */
+@supports -moz-bool-pref( "glassfox.sidebar.taller-pinned-tabs") {
+  :root:not(:has(sidebar-main[expanded])) {
+    #tabbrowser-tabs {
+        height: 100% !important;
+        :has(tab) {
+            min-height: clamp(0px, 45%, 100%) !important;
+        }
+    }
+}
+
+}
+
+/* Tab styling for more visual separation */
+#tabbrowser-tabs tab {
+  &, & * {
+    transition: all ease .3s !important;
+  }
+  .tab-background {
+    background: color-mix(in srgb, currentColor 10%, var(--bg-mixer, var(--tab-bg, transparent))) !important;
+  }
+  &[pending="true"] {
+    .tab-background {
+      --tab-bg: var(--transparent-bg-solid);
+      filter: brightness(60%);
+    }
+    .tab-icon-stack {
+      filter: sepia(80%);
+    }
+  }
+  &:hover {
+    .tab-background {
+      --tab-bg: var(--transparent-bg-light);
+      filter: brightness(100%);
+    }
+    .tab-icon-stack {
+      filter: sepia(0);
+      scale: 1.2;
+    }
+  }
+}
+
+/* Tab sizing - Support for magnification or different sizes. */
+#tabbrowser-tabs tab {
+  @supports -moz-bool-pref( "glassfox.sidebar.magnification-enabled") {
+    @supports not -moz-bool-pref( "glassfox.sidebar.magnification.icons-only") {
+      --tab-height: var(--tab-scale);
+    }
+  }
+  --min-height: var(--tab-min-height);
+  .tab-stack {
+    --tab-min-height: calc(var(--min-height) * var(--tab-size, 1) * var(--tab-height, 1));
+    .tab-icon-stack {
+      scale: calc(var(--tab-scale, 1) * var(--tab-size, 1));
+    }
+  }
+}
+
+/* Tab Sizing */
+@supports -moz-bool-pref( "glassfox.sidebar.smaller-tabs") {
+    tab,
+    #tab-preview-panel {
+        --tab-size:.8;
+    }
+}
+
+@supports -moz-bool-pref( "glassfox.sidebar.larger-tabs") {
+    tab, 
+    #tab-preview-panel {
+        --tab-size: 1.25;
+    }
+}
+
+/* macOS Dock-like magnification for sidebar */
+@supports -moz-bool-pref( "glassfox.sidebar.magnification-enabled") and (-moz-bool-pref: "sidebar.verticalTabs") {
+  sidebar-main:not([expanded]) {
+    #vertical-tabs {
+      overflow: visible !important;
+    }
+    #tabbrowser-tabs {
+      overflow: visible clip !important;
+      width: min-content;
+      & > :has(tab) {
+        & > tab {
+          &:has(+tab+tab:hover),
+                    &:is(tab:hover+tab+tab) {
+            --tab-scale:  1.05;
+          }
+          &:has(+tab:hover),
+          &:is(tab:hover+tab) {
+            --tab-scale: 1.25;
+          }
+          &:hover {
+            --tab-scale: 1.5;
+          }
+        }
+      }
+    }
+  }
+}
+
+@supports -moz-bool-pref( "glassfox.sidebar.hide-new-tab-button") {
+  #tabbrowser-tabs toolbarbutton[label="New Tab"] {
+    display: none !important;
+  }
+}
+
+/* Add border radius to developer tools */
+.devtools-toolbox-bottom-iframe {
+    clip-path: inset(0 0 0 round 5px) !important;
+    background: transparent !important;
+}
+splitter[class*="devtools"] {
+    display: none !important;
+}
+
+#unified-extensions-button{
+    width: 3px;
+    padding-inline: 0 !important
+}
+#unified-extensions-button > .toolbarbutton-icon {
+    width: 0 !important;
+}
+
+
+
+
+
+
+
+
+
+/* Reposition the container color bar to the sides of the tab */
+
+#tabbrowser-tabs .tab-context-line {
+    display: none;
+}
+
+#tabbrowser-tabs .tab-background[selected="true"] {
+    border-right: solid 5px var(--identity-icon-color, #fff) !important;
+    border-left: solid 5px var(--identity-icon-color, #fff) !important;
+}
+
+/* All deselected tabs should have text with lower visibility */
+
+.tab-label:not([selected="true"]) {
+    color: #ddd !important;
+}
+
+/* Remove the small arrow from the search bar, except when hovered */
+
+#searchbar>.search-go-container {
+    opacity: 0;
+    transition: all .35s ease-in-out;
+}
+
+#searchbar:hover>.search-go-container {
+    animation: .35s delayedFadeIn ease-in-out;
+    opacity: 1;
+}
+
+/* Remove additional buttons from the URL bar, but show them on hover with a small delay */
+
+#urlbar-input-container>#page-action-buttons {
+    opacity: 0;
+    transition: all .5s ease-in-out;
+}
+
+#urlbar-input-container:hover>#page-action-buttons {
+    animation: .5s delayedFadeIn ease-in-out;
+    opacity: 1;
+}
+
+@keyframes delayedFadeIn {
+    0% {
+        opacity: 0;
+    }
+    35% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Hide close buttons on tabs */
+
+tab[selected="true"]>stack>hbox>.tab-close-button {
+    opacity: 1 !important;
+    display: block !important;
+    transition: .25s all ease-in-out !important;
+}
+
+tab:not([selected="true"])>stack>hbox>.tab-close-button {
+    opacity: 0 !important;
+    transform: scale(0) !important;
+    transition: .25s all ease-in-out !important;
+}
+
+
+/* Hide Extension Name Unless Site Identity Area is Hovered */
+#identity-box.extensionPage:not(:hover) #identity-icon-labels {
+  display: none !important;
+}
+#identity-box.extensionPage:hover #identity-icon-labels {
+  max-width: 300px !important;
+}
+
+
+#identity-icon[tooltiptext="Loaded by extension: Minim: Minimalist New Tab"] {
+	list-style-image: url(chrome://global/skin/icons/link.svg) !important;
+}
+#identity-icon-label[value="Extension (Minim: Minimalist New Tab)"] {
+	display: none;
+}
+
+
+
