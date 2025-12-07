@@ -5,6 +5,9 @@ A feature-rich fork of the original [GlassFox by Ashley-Cause](https://github.co
 <video src="https://github.com/Unnidentified/GlassFox-Reborn/blob/main/CleanShot%202025-12-07%20at%2021.41.12%20(1).mp4"></video>
 ![CleanShot 2025-12-07 at 04 26 36@2x](https://github.com/user-attachments/assets/67ea520a-e207-4303-a85c-939832af4db1)
 
+
+
+
 > **New in Reborn:**
 > * **Dynamic Blur:** Inactive tabs are blurred to minimize distractions.
 > * **Smart Hover:** Hovering over an inactive tab smoothly unblurs it.
