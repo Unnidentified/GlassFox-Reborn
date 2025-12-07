@@ -9,10 +9,12 @@ A feature-rich fork of the original [GlassFox by Ashley-Cause](https://github.co
 > * **Smart Hover:** Hovering over an inactive tab smoothly unblurs it.
 > * **Kinetic Expansion:** Tab text expand with a smooth transition animation upon hover.
 
-* Works both ways, vertical, and horizontal.
-![collapsed](https://github.com/user-attachments/assets/efe0b527-48e9-430a-876f-3a93a0f55c53)
-![expanded](https://github.com/user-attachments/assets/7dda6730-b99d-4b74-ae5e-669c88f064fb)
-![horizontal](https://github.com/user-attachments/assets/dbc8e91e-aa4f-4edb-aad8-900b91e235df)
+
+![collapsed](https://github.com/user-attachments/assets/bf2b391d-cf31-4ca2-9402-857d40dfc696)
+![expanded](https://github.com/user-attachments/assets/dc8e0d57-10bd-464e-8a41-0e76e446bc0b)
+![horizontal](https://github.com/user-attachments/assets/8d812596-8eea-424d-97a9-91f6663a4043)
+> * Works both ways, vertical, and horizontal.
+
 
 ## Installation
 
