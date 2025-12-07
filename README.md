@@ -2,15 +2,17 @@
 
 A feature-rich fork of the original [GlassFox by Ashley-Cause](https://github.com/Ashley-Cause/GlassFox/). This theme brings full transparency to Firefox on macOS/Linux with added dynamic motion effects.
 ![CleanShot 2025-12-07 at 04 26 36@2x](https://github.com/user-attachments/assets/67ea520a-e207-4303-a85c-939832af4db1)
-![collapsed](https://github.com/user-attachments/assets/efe0b527-48e9-430a-876f-3a93a0f55c53)
-![expanded](https://github.com/user-attachments/assets/7dda6730-b99d-4b74-ae5e-669c88f064fb)
-![horizontal](https://github.com/user-attachments/assets/dbc8e91e-aa4f-4edb-aad8-900b91e235df)
 
 
 > **New in Reborn:**
 > * **Dynamic Blur:** Inactive tabs are blurred to minimize distractions.
 > * **Smart Hover:** Hovering over an inactive tab smoothly unblurs it.
 > * **Kinetic Expansion:** Tab text expand with a smooth transition animation upon hover.
+
+* Works both ways, vertical, and horizontal.
+![collapsed](https://github.com/user-attachments/assets/efe0b527-48e9-430a-876f-3a93a0f55c53)
+![expanded](https://github.com/user-attachments/assets/7dda6730-b99d-4b74-ae5e-669c88f064fb)
+![horizontal](https://github.com/user-attachments/assets/dbc8e91e-aa4f-4edb-aad8-900b91e235df)
 
 ## Installation
 
