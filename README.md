@@ -20,7 +20,7 @@ A feature-rich fork of the original [GlassFox by Ashley-Cause](https://github.co
 ### 1. Set up the Theme
 1.  Open `about:profiles` in a new tab.
 2.  Click **"Show in Finder"** (or Directory) under your current profile.
-3.  Download the `chrome` folder from this repo and place them inside.
+3.  Download the `chrome` folder from this repo and place it inside.
 4.  Relaunch Firefox.
 
 ### 2. Activate Styling
