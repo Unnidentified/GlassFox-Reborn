@@ -36,18 +36,18 @@ A feature-rich fork of the original [GlassFox by Ashley-Cause](https://github.co
 1.  **[uBlock Origin](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/)**
     * **Highly Recommended.** Full fledged open-source ad-blocker.
 2.  **['Improve YouTube'](https://addons.mozilla.org/en-US/firefox/addon/youtube-addon/)**
-3.  * Install it. You won't regret it.
-4.  **[Return Youtube Dislike](https://addons.mozilla.org/en-US/firefox/addon/return-youtube-dislikes/)**
-5.  **[Ultima Dark](https://addons.mozilla.org/en-US/firefox/addon/ultimadark/)**
-6.  * **Fastest dark mode** for firefox equiparable with chromium flags.
-7.  **[Yet Another Smooth Scrolling WE](https://addons.mozilla.org/en-US/firefox/addon/yass-we/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search)**
-8.  **[Minim New Start Page](https://addons.mozilla.org/en-US/firefox/addon/minim-minimalist-new-tab/)**
-9.  **[Firefox Color](https://addons.mozilla.org/en-US/firefox/addon/firefox-color/)**
+    * Install it. You won't regret it.
+3.  **[Return Youtube Dislike](https://addons.mozilla.org/en-US/firefox/addon/return-youtube-dislikes/)**
+4.  **[Ultima Dark](https://addons.mozilla.org/en-US/firefox/addon/ultimadark/)**
+    * **Fastest dark mode** for firefox equiparable with chromium flags.
+5.  **[Yet Another Smooth Scrolling WE](https://addons.mozilla.org/en-US/firefox/addon/yass-we/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search)**
+6.  **[Minim New Start Page](https://addons.mozilla.org/en-US/firefox/addon/minim-minimalist-new-tab/)**
+7.  **[Firefox Color](https://addons.mozilla.org/en-US/firefox/addon/firefox-color/)**
     * Install the extension.
     * Click on this theme and apply colour theme: [Firefox Brown](https://color.firefox.com/?theme=XQAAAAIxAgAAAAAAAABBqYhm849SCicxcUBMsXcGHf3p79EhVPrI8K8LqY6dyVywP5j0c4QSlcOzgjprK_GGRyoiJXg5SbkUvSCorNAwbsfE62mfpKioe9QwseWZAO7sz9SnXvMNHRAP7n08wQcejsL19UHFQFlxslAv0J3gLHHC0OYO_i4QTE9ig7UzMVsOB_ad7A68eGHzl38qBT-LuSrus3_Xz58qsTGdhtW6eRHaJX3R5rNDPiYZmBHKQv7Q5OyVxsX0BBJ7LOYy40SuldliDxXQjzEc8SBMdeoBS2XFrTqi6SToQ3PP8AIEHuqrHwxij8BoLXbn3Oqkb3A4XT8XjytTL1nsFaHszoGyj1taQpgG5ECkASfDrfbsvRzML7uZB5s0HWcWPWtAL7OM4GEJUvFwYJWg7U3bKu98YXuUKMP_6Wgbfg).
     * Use this Unsplash photo: [View of Earth from an Airplane](https://unsplash.com/photos/a-view-of-the-earth-from-an-airplane-WfhF41ZM2dc).
     * Set it as your **custom background** in the **new tab** extension settings.
-**[OPTIONAL][BetterFox](https://github.com/yokoffing/Betterfox)**
+**[OPTIONAL] 9. [BetterFox](https://github.com/yokoffing/Betterfox)**
 * Make Firefox **faster, more private and secure** — without using third-party code.
 
 ## Configuration
