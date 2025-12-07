@@ -2,7 +2,7 @@
 
 A feature-rich fork of the original [GlassFox by Ashley-Cause](https://github.com/Ashley-Cause/GlassFox/). This theme brings full transparency to Firefox on macOS/Linux with added dynamic motion effects.
 ![CleanShot 2025-12-07 at 21 07 24@2x](https://github.com/user-attachments/assets/817426bb-58df-421f-8bd4-40d1c7862379)
-<video src=""></video>
+<video src="https://github.com/Unnidentified/GlassFox-Reborn/blob/main/CleanShot%202025-12-07%20at%2021.41.12%20(1).mp4"></video>
 ![CleanShot 2025-12-07 at 04 26 36@2x](https://github.com/user-attachments/assets/67ea520a-e207-4303-a85c-939832af4db1)
 
 > **New in Reborn:**
