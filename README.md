@@ -1,11 +1,18 @@
 # GlassFox-Reborn
 
 A feature-rich fork of the original [GlassFox by Ashley-Cause](https://github.com/Ashley-Cause/GlassFox/). This theme brings full transparency to Firefox on macOS/Linux with added dynamic motion effects.
-![CleanShot 2025-12-07 at 21 07 24@2x](https://github.com/user-attachments/assets/817426bb-58df-421f-8bd4-40d1c7862379)
-![ezgif-3ad06ba93efaa2d0](https://github.com/user-attachments/assets/187c451e-8779-4d73-a6b8-3a9129ca92df)
+<table>
+  <tr>
+    <td width="50%">
+      <img src="https://github.com/user-attachments/assets/817426bb-58df-421f-8bd4-40d1c7862379" alt="CleanShot" style="width:100%">
+    </td>
+    <td width="50%">
+      <img src="https://github.com/user-attachments/assets/187c451e-8779-4d73-a6b8-3a9129ca92df" alt="Animation" style="width:100%">
+    </td>
+  </tr>
+</table>
+
 ![CleanShot 2025-12-07 at 04 26 36@2x](https://github.com/user-attachments/assets/67ea520a-e207-4303-a85c-939832af4db1)
-
-
 
 
 > **New in Reborn:**
@@ -51,8 +58,8 @@ A feature-rich fork of the original [GlassFox by Ashley-Cause](https://github.co
     * Click on this theme and apply colour theme: [Firefox Brown](https://color.firefox.com/?theme=XQAAAAIxAgAAAAAAAABBqYhm849SCicxcUBMsXcGHf3p79EhVPrI8K8LqY6dyVywP5j0c4QSlcOzgjprK_GGRyoiJXg5SbkUvSCorNAwbsfE62mfpKioe9QwseWZAO7sz9SnXvMNHRAP7n08wQcejsL19UHFQFlxslAv0J3gLHHC0OYO_i4QTE9ig7UzMVsOB_ad7A68eGHzl38qBT-LuSrus3_Xz58qsTGdhtW6eRHaJX3R5rNDPiYZmBHKQv7Q5OyVxsX0BBJ7LOYy40SuldliDxXQjzEc8SBMdeoBS2XFrTqi6SToQ3PP8AIEHuqrHwxij8BoLXbn3Oqkb3A4XT8XjytTL1nsFaHszoGyj1taQpgG5ECkASfDrfbsvRzML7uZB5s0HWcWPWtAL7OM4GEJUvFwYJWg7U3bKu98YXuUKMP_6Wgbfg).
     * Use this Unsplash photo: [View of Earth from an Airplane](https://unsplash.com/photos/a-view-of-the-earth-from-an-airplane-WfhF41ZM2dc).
     * Set it as your **custom background** in the **new tab** extension settings.
-**[OPTIONAL] 9. [BetterFox](https://github.com/yokoffing/Betterfox)**
-* Make Firefox **faster, more private and secure** — without using third-party code.
+9.  **[BetterFox](https://github.com/yokoffing/Betterfox)**
+    * Make Firefox **faster, more private and secure** — without using third-party code.
 
 ## Configuration
 Customize behavior via `about:config`:
