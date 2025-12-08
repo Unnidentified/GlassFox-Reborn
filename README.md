@@ -1,6 +1,6 @@
 # GlassFox-Reborn
 
-A feature-rich fork of the original [GlassFox by Ashley-Cause](https://github.com/Ashley-Cause/GlassFox/). This theme brings full transparency to Firefox on macOS/Linux with added dynamic motion effects.
+A simple but cool fork of the original [GlassFox by Ashley-Cause](https://github.com/Ashley-Cause/GlassFox/). This theme brings full transparency to Firefox on macOS/Linux with added dynamic motion effects.
 <table>
   <tr>
     <td width="50%">
