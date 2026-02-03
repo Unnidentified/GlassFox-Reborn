@@ -39,7 +39,7 @@ A simple but cool fork of the original [GlassFox by Ashley-Cause](https://github
 1.  Go to `about:config` and click `Accept the Risk and Continue`.
 2.  Set the following values to `true`:
     * `toolkit.legacyUserProfileCustomizations.stylesheets`
-    * `widget.macos.titlebar-blend-mode.behind-window`
+    * `widget.macos.titlebar-blend-mode.behind-window` (only on macos)
     * `browser.tabs.allow_transparent_browser` (if using userContent.css)
 
 ## Mandatory/highly-recommended for a better web-experience.
@@ -55,11 +55,11 @@ A simple but cool fork of the original [GlassFox by Ashley-Cause](https://github
 6.  **[Minim New Start Page](https://addons.mozilla.org/en-US/firefox/addon/minim-minimalist-new-tab/)**
 7.  **[Firefox Color](https://addons.mozilla.org/en-US/firefox/addon/firefox-color/)**
     * Install the extension.
-    * Click on this theme and apply colour theme: [Firefox Brown](https://color.firefox.com/?theme=XQAAAAIxAgAAAAAAAABBqYhm849SCicxcUBMsXcGHf3p79EhVPrI8K8LqY6dyVywP5j0c4QSlcOzgjprK_GGRyoiJXg5SbkUvSCorNAwbsfE62mfpKioe9QwseWZAO7sz9SnXvMNHRAP7n08wQcejsL19UHFQFlxslAv0J3gLHHC0OYO_i4QTE9ig7UzMVsOB_ad7A68eGHzl38qBT-LuSrus3_Xz58qsTGdhtW6eRHaJX3R5rNDPiYZmBHKQv7Q5OyVxsX0BBJ7LOYy40SuldliDxXQjzEc8SBMdeoBS2XFrTqi6SToQ3PP8AIEHuqrHwxij8BoLXbn3Oqkb3A4XT8XjytTL1nsFaHszoGyj1taQpgG5ECkASfDrfbsvRzML7uZB5s0HWcWPWtAL7OM4GEJUvFwYJWg7U3bKu98YXuUKMP_6Wgbfg).
+    * Click on this link and apply colour theme: [Firefox Brown](https://color.firefox.com/?theme=XQAAAAIxAgAAAAAAAABBqYhm849SCicxcUBMsXcGHf3p79EhVPrI8K8LqY6dyVywP5j0c4QSlcOzgjprK_GGRyoiJXg5SbkUvSCorNAwbsfE62mfpKioe9QwseWZAO7sz9SnXvMNHRAP7n08wQcejsL19UHFQFlxslAv0J3gLHHC0OYO_i4QTE9ig7UzMVsOB_ad7A68eGHzl38qBT-LuSrus3_Xz58qsTGdhtW6eRHaJX3R5rNDPiYZmBHKQv7Q5OyVxsX0BBJ7LOYy40SuldliDxXQjzEc8SBMdeoBS2XFrTqi6SToQ3PP8AIEHuqrHwxij8BoLXbn3Oqkb3A4XT8XjytTL1nsFaHszoGyj1taQpgG5ECkASfDrfbsvRzML7uZB5s0HWcWPWtAL7OM4GEJUvFwYJWg7U3bKu98YXuUKMP_6Wgbfg).
     * Use this Unsplash photo: [View of Earth from an Airplane](https://unsplash.com/photos/a-view-of-the-earth-from-an-airplane-WfhF41ZM2dc).
     * Set it as your **custom background** in the **new tab** extension settings.
 9.  **[BetterFox](https://github.com/yokoffing/Betterfox)**
-    * Make Firefox **faster, more private and secure** — without using third-party code.
+    * Make Firefox **faster, more private and secure** without using third-party code.
 
 ## Configuration
 Customize behavior via `about:config`:
