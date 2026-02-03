@@ -18,7 +18,7 @@ A simple but cool fork of the original [GlassFox by Ashley-Cause](https://github
 > **New in Reborn:**
 > * **Dynamic Blur:** Inactive tabs are blurred to minimize distractions.
 > * **Smart Hover:** Hovering over an inactive tab smoothly unblurs it.
-> * **Text Expansion:** Tab text expand with a smooth transition animation upon hover.
+> * **Text Expansion:** Tab text expands with a smooth transition animation upon hover.
 
 
 ![collapsed](https://github.com/user-attachments/assets/bf2b391d-cf31-4ca2-9402-857d40dfc696)
